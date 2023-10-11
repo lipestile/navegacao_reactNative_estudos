@@ -1,0 +1,7 @@
+   npm install axios
+    npm install react-native-paper
+    npm install @react-navigation/native
+    npm install @react-navigation/stack react-native-gesture-handler
+    npx expo install react-native-screens react-native-safe-area-context
+
+    
