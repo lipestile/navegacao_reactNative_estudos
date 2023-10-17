@@ -4,10 +4,9 @@ import Api from '../../service/Api'
 import { FlatList } from 'react-native'
 import { Avatar, Button, Card, Title } from 'react-native-paper'
 
-export default function Post(navigation) {
-
+export default function Post(props) {
+ 
   const [postes, setPostes] = useState([])
-
   useEffect(() => {
 
     Api.get('/posts')
@@ -18,7 +17,6 @@ export default function Post(navigation) {
       })
   }, [])
 
-  console.log(postes)
   return (
     <View>
       <FlatList

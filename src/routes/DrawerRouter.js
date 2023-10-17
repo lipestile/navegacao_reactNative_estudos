@@ -6,6 +6,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Home from '../screen/home/Home';
 import Post from '../screen/posts/Post';
 import { Ionicons } from '@expo/vector-icons';
+import Listacarros from '../screen/listacarros/Listacarros';
 
 const Drawer = createDrawerNavigator()
 
@@ -29,6 +30,7 @@ export default function DrawerRouter() {
                 
                 />
             <Drawer.Screen name="Postes" component={Post} />
+            <Drawer.Screen name='Carros' component={Listacarros}/>
         </Drawer.Navigator>
     </NavigationContainer>
   )
